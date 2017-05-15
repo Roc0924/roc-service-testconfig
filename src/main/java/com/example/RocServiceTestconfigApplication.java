@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class RocServiceTestconfigApplication {
 	@Value("${environment}")
-	String appName;
+	String environment;
 
 	@RequestMapping("/")
 	public String home() {
-		return appName;
+		return environment;
 	}
 
 	public static void main(String[] args) {
